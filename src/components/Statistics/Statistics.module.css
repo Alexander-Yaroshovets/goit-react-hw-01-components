@@ -1,0 +1,29 @@
+.statistics {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(121, 247, 205);
+}
+.title {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.stat_list {
+  display: flex;
+  background-color: #fff;
+  padding: 60px;
+}
+.statts_item {
+  display: flex;
+  padding: 20px;
+}
+.stats_label {
+  display: inline;
+}
+.stats_percentage {
+  display: block;
+}

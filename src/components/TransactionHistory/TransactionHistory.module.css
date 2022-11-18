@@ -1,0 +1,29 @@
+.transaction__history {
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', Sans-Serif;
+  font-size: 14px;
+  border-radius: 10px;
+  border-spacing: 0;
+  text-align: center;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.transaction__head {
+  background: #bcebdd;
+  color: white;
+  text-shadow: 0 1px 1px #2d2020;
+  border: 1px solid black;
+}
+.transaction__body {
+  background: #f5d7bf;
+  font-size: 14px;
+  border: 1px solid black;
+}
+.table {
+  padding: 10px;
+  border: 1px solid red;
+}
+.table__head {
+  padding: 20px;
+  border: 1px solid blue;
+}

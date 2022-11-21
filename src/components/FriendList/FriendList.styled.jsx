@@ -1,12 +1,14 @@
-.friendlist {
+import styled from 'styled-components';
+
+export const ListOfFriends = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgb(235, 248, 243);
-}
+`;
 
-.friendlist_item {
+export const FriendItem = styled.li`
   width: 360px;
   display: flex;
   justify-content: center;
@@ -17,33 +19,36 @@
   background-color: rgb(220, 252, 189);
   border-radius: 10px;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
-}
+`;
 
-.friendlist_online {
-  display: block;
-  background-color: green;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-
-.friendlist_ofline {
-  display: block;
-  background-color: red;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-
-.friendlist_avatar {
+export const Picture = styled.img`
   display: flex;
   margin-left: 10px;
   margin-right: 10px;
-}
+`;
 
-.friendlist_name {
+export const FriendName = styled.span`
   display: block;
   font-size: 16px;
   font-weight: bold;
   width: 40px;
-}
+`;
+
+const setBgColor = props => {
+  switch (props.eventType) {
+    case true:
+      return 'green';
+    case false:
+      return 'red';
+    default:
+      return 'black';
+  }
+};
+
+export const IsOnline = styled.span`
+  display: block;
+  background-color: ${setBgColor};
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+`;
